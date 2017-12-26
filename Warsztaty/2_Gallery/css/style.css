@@ -27,6 +27,7 @@
 
 .fullScreen img {
     display: block;
+    position: relative;
     margin: 15px auto 5px;
     width: auto;
     height: calc(100% - 50px);

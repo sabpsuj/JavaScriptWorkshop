@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (target.parentElement.classList !== 'done') {
                 target.parentElement.classList.toggle('done');
                 counter.innerText = --count;
-
             }
         } else if (target.innerText === 'Delete') {
             target.parentElement.parentElement.removeChild(target.parentElement);
@@ -46,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var toDelete = document.querySelectorAll('li.done');
         for (var i = 0; i < toDelete.length; i++) {
                 toDelete[i].parentElement.removeChild(toDelete[i]);
+            counter.innerText = count;
         }
     };
 
